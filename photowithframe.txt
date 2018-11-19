@@ -1,5 +1,0 @@
-Photo with Frame :
-
-<div style="margin:0 auto;background: url(images/fram150.png) no-repeat center; width: 150px; height: 200px; padding: 30px 0 0 2px;">
-                                                <img src="images/mrgyan.jpg" style="width: 137px; height: 171px;" alt="#" />
-                                             </div>
