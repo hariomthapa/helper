@@ -1,0 +1,4 @@
+@ECHO OFF
+cd c:\downloads
+del "hari.txt"
+start %SystemRoot%\system32\calc.exe
