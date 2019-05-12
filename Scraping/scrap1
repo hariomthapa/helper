@@ -1,0 +1,80 @@
+
+    $('.icon-dc').html('+');
+    $('.icon-ba').html('-');
+    $('.icon-fe').html('(');
+    $('.icon-hg').html(')');
+    $('.icon-acb').html('0');
+    $('.icon-yz').html('1');
+    $('.icon-wx').html('2');
+    $('.icon-vu').html('3');
+    $('.icon-ts').html('4');
+    $('.icon-rq').html('5');
+    $('.icon-po').html('6');
+    $('.icon-nm').html('7');
+    $('.icon-lk').html('8');
+    $('.icon-ji').html('9');
+
+    var ar1 = []; var ar2 = []; var strng; var ar3 = []
+
+        $("span.lng_cont_name").each(function () {
+        //$('#contactname').append($(this).html());
+        ar1.push($(this).html());
+    });
+
+        $('li.cntanr').each(function () {
+            if ($(this).find("p").hasClass("contact-info")) {
+
+        $(this).find("p.contact-info").find("span").each(function () {
+            switch ($(this).attr('class')) {
+                case 'mobilesv icon-dc':
+                    strng += '+'; break;
+                case 'mobilesv icon-ba':
+                    strng += '-'; break;
+                case 'mobilesv icon-fe':
+                    strng += '('; break;
+                case 'mobilesv icon-hg':
+                    strng += ')'; break;
+                case 'mobilesv icon-acb':
+                    strng += '0'; break;
+                case 'mobilesv icon-yz':
+                    strng += '1'; break;
+                case 'mobilesv icon-wx':
+                    strng += '2'; break;
+                case 'mobilesv icon-vu':
+                    strng += '3'; break;
+                case 'mobilesv icon-ts':
+                    strng += '4'; break;
+                case 'mobilesv icon-rq':
+                    strng += '5'; break;
+                case 'mobilesv icon-po':
+                    strng += '6'; break;
+                case 'mobilesv icon-nm':
+                    strng += '7'; break;
+                case 'mobilesv icon-lk':
+                    strng += '8'; break;
+                case 'mobilesv icon-ji':
+                    strng += '9'; break;
+            }
+
+        });
+
+    }
+            else {strng += '+(91)'; }
+});
+
+
+//strng = $('#contactnum').html();
+var ar2 = strng.split('+');
+//$('#contactnum').html(strng);
+
+        $("span.cont_fl_addr").each(function () {
+        //$('#contactaddr').append($(this).html());
+        ar3.push($(this).html());
+    });
+
+    //alert(ar1.length + ", " + ar2.length + ", " + ar3.length);
+
+
+for (var i = 0; i < ar1.length; i++) {
+    $("#tbl").append('<tr><td rowspan="2">'+(i+1)+'</td><td style="font-size:14px;">' + ar1[i] + '</td><td style="font-size:14px;">' + ar2[i + 1] + '</td><td rowspan="2"></td > </tr> <tr><td colspan="2" style="font-size:12px;">' + ar3[i] + '</td ></tr>');
+}
