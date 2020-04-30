@@ -1,0 +1,3 @@
+Open cmd
+
+netsh wlan show profile name=jiofi2_122055 key=clear
