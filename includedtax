@@ -1,0 +1,9 @@
+To Calculate Tax in Total Amount
+
+```
+100% + 12% = 112/100 = 1.12
+
+Total Amount / 1.12 = Taxable Amount
+
+Total Amount - Taxable Amount = Tax Amount
+```
